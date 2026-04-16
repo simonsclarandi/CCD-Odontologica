@@ -3,13 +3,13 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 export default function Hero() {
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-[80vh] px-4 py-20 text-center bg-gray-50">
+    <section className="relative flex flex-col items-left justify-center min-h-[80vh] px-4 py-20 text-left bg-[url('/banner4.jpeg')] bg-cover bg-center">
       
       {/* NOTA: Para poner una imagen real de fondo luego, cambia el bg-gray-50 de arriba por:
         bg-[url('/foto-consultorio.jpg')] bg-cover bg-center
       */}
 
-      <div className="relative z-10 max-w-4xl mx-auto">
+      <div className="relative z-10 max-w-4xl ml-0">
         {/* Mantenemos el slogan del logo como un detalle sutil */}
         <span className="block mb-4 text-sm font-bold tracking-widest uppercase text-gold-600">
           Arte, Ciencia, Tecnología
@@ -22,12 +22,12 @@ export default function Hero() {
         </h1>
         
         {/* Párrafo adaptado de la propuesta */}
-        <p className="max-w-2xl mx-auto mb-10 text-lg leading-relaxed text-gray-600 md:text-xl">
+        <p className="max-w-2xl ml-0 mb-10 text-lg leading-relaxed text-white-600 md:text-xl">
           No trabajamos desde protocolos repetidos ni soluciones invasivas por costumbre. 
           Diagnosticamos con precisión e intervenimos con criterio: <strong>conservar antes que reemplazar.</strong>
         </p>
 
-        <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <div className="flex flex-col items-start justify-start gap-4 sm:flex-row">
           <Button 
             variant="contained" 
             size="large" 

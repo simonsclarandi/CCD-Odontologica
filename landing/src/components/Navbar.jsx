@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button, IconButton, Drawer, List, ListItem, ListItemButton, ListItemText } from '@mui/material';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -6,6 +6,21 @@ import CloseIcon from '@mui/icons-material/Close';
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false); // <-- 1. Nuevo estado para el scroll
+
+  // <-- 2. Efecto para escuchar el scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const toggleDrawer = (open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -23,7 +38,7 @@ export default function Navbar() {
   ];
 
   const drawerContent = (
-    <div className="w-[280px] h-full bg-white">
+    <div className="w-[280px] h-full bg-white block">
       <div className="flex items-center justify-between p-4 border-b border-gray-100">
         <span className="text-xl font-black tracking-tight">CCD<span className="text-gold-500">Odontológica</span></span>
         <IconButton onClick={toggleDrawer(false)}>
@@ -75,18 +90,27 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="flex items-center justify-between px-6 py-4 bg-white border-b border-gray-100 shadow-sm">
+      {/* 3. La barra de navegación ahora usa isScrolled para cambiar su fondo y padding */}
+      <nav 
+        className={`sticky top-0 z-50 flex items-center justify-between px-6 transition-all duration-300 ease-in-out border-b border-gray-100 ${
+          isScrolled 
+            ? 'bg-white/80 backdrop-blur-md shadow-md py-2' 
+            : 'bg-white shadow-sm py-4'
+        }`}
+      >
 
-        {/* Logo Real (Lee el archivo desde la carpeta public) */}
-        <div className="flex items-center justify-center overflow-hidden w-20 h-20 md:w-24 md:h-24 rounded-full transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer">
+        {/* Logo (Se achica ligeramente al hacer scroll) */}
+        <div className={`flex items-center justify-center overflow-hidden rounded-full transition-all duration-300 ease-in-out hover:scale-110 cursor-pointer ${
+          isScrolled ? 'w-16 h-16 md:w-20 md:h-20' : 'w-20 h-20 md:w-24 md:h-24'
+        }`}>
           <img
             src="/Logo.jpeg"
             alt="CCD Centro Dental"
-            className="w-full h-full object-cover scale-[1] mix-blend-multiply transition-all duration-300"
+            className="w-full h-full object-cover scale-[1.15] mix-blend-multiply transition-all duration-300"
           />
         </div>
 
-        {/* Enlaces de navegación (Ocultos en celulares, visibles en PC) */}
+        {/* Enlaces de navegación */}
         <div className="hidden space-x-8 md:flex">
           {navLinks.map((link) => (
             <a
@@ -99,11 +123,11 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Botón Call to Action - Estilo Premium (solo desktop) */}
+        {/* Botón Call to Action (Se ajusta al hacer scroll) */}
         <div className="hidden md:block">
           <Button
             variant="contained"
-            size="large"
+            size={isScrolled ? "medium" : "large"}
             startIcon={<WhatsAppIcon />}
             href="https://wa.me/5493516768244"
             target="_blank"
@@ -114,16 +138,17 @@ export default function Navbar() {
               textTransform: 'none',
               fontWeight: 'bold',
               borderRadius: '8px',
-              padding: '8px 24px',
+              padding: isScrolled ? '8px 20px' : '10px 28px',
               boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)',
-              '&:hover': { backgroundColor: '#d4af37', color: '#111827' }
+              '&:hover': { backgroundColor: '#d4af37', color: '#111827' },
+              transition: 'all 0.3s ease'
             }}
           >
             Agendar Consulta
           </Button>
         </div>
 
-        {/* Botón Menú Hamburguesa (solo móvil) */}
+        {/* Botón Menú Hamburguesa (Móvil) */}
         <div className="md:hidden">
           <IconButton
             onClick={toggleDrawer(true)}

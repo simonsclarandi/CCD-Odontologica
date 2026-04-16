@@ -24,14 +24,21 @@ export default function ContactFooter() {
               Odontología basada en criterio biomimético. Arte, ciencia y tecnología al servicio de tu salud bucal.
             </p>
             <div className="flex gap-2">
-              <IconButton sx={{ color: '#d4af37', '&:hover': { bgcolor: '#ffffff10' } }}>
+              <IconButton 
+                component="a" 
+                href="https://www.instagram.com/odontologia.ccd/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                sx={{ color: '#d4af37', '&:hover': { bgcolor: '#ffffff10' } }}>
                 <InstagramIcon />
               </IconButton>
-              <IconButton sx={{ color: '#d4af37', '&:hover': { bgcolor: '#ffffff10' } }}>
+              <IconButton  
+                component="a" 
+                href="https://www.facebook.com/odocon/?locale=es_LA" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                sx={{ color: '#d4af37', '&:hover': { bgcolor: '#ffffff10' } }}>
                 <FacebookIcon />
-              </IconButton>
-              <IconButton sx={{ color: '#d4af37', '&:hover': { bgcolor: '#ffffff10' } }}>
-                <LinkedInIcon />
               </IconButton>
             </div>
           </div>

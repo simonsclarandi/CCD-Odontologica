@@ -5,6 +5,7 @@ import WhyChooseUs from './components/WhyChooseUs.jsx'
 import Services from './components/Services.jsx'
 import ContactFooter from './components/ContactFooter.jsx'
 import FloatingWhatsApp from './components/FloatingWhatsApp.jsx'
+import Staff from './components/Staff.jsx'
 import './App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Hero />
         <Philosophy />
         <WhyChooseUs />
+        <Staff />
         <Services />
         <ContactFooter />
       </main>
