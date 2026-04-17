@@ -11,7 +11,7 @@ export default function FloatingWhatsApp() {
     >
       <Fab
         component="a"
-        href="https://wa.me/5493516768244"
+        href="https://api.whatsapp.com/send?phone=543513359417"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Contactar por WhatsApp"

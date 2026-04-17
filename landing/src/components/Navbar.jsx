@@ -69,7 +69,7 @@ export default function Navbar() {
           variant="contained"
           fullWidth
           startIcon={<WhatsAppIcon />}
-          href="https://wa.me/5493516768244"
+          href="https://api.whatsapp.com/send?phone=543513359417"
           target="_blank"
           rel="noopener noreferrer"
           sx={{
@@ -129,7 +129,7 @@ export default function Navbar() {
             variant="contained"
             size={isScrolled ? "medium" : "large"}
             startIcon={<WhatsAppIcon />}
-            href="https://wa.me/5493516768244"
+            href="https://api.whatsapp.com/send?phone=543513359417"
             target="_blank"
             rel="noopener noreferrer"
             sx={{

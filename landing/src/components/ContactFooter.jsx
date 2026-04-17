@@ -77,11 +77,15 @@ export default function ContactFooter() {
             <ul className="space-y-4 text-sm text-gray-400">
               <li className="flex items-start gap-3">
                 <PlaceIcon sx={{ color: '#d4af37', fontSize: 20 }} />
-                <span>Córdoba Capital, Argentina <br/> (Dirección del consultorio)</span>
+                <span>
+                  <a href="https://maps.app.goo.gl/D4szRbJi9mQ93UrV7" target="_blank" rel="noopener noreferrer">
+                    Córdoba Capital, Argentina <br />
+                  </a>
+                </span>
               </li>
               <li className="flex items-center gap-3">
                 <PhoneIcon sx={{ color: '#d4af37', fontSize: 20 }} />
-                <span>+54 351 676 8244</span>
+                <span>+54 351 335 9417</span>
               </li>
               <li className="flex items-center gap-3">
                 <EmailIcon sx={{ color: '#d4af37', fontSize: 20 }} />
