@@ -29,7 +29,9 @@ export default function Hero() {
 
         <div className="flex flex-col items-start justify-start gap-4 sm:flex-row">
           <Button 
-            variant="contained" 
+            variant="contained"
+            component="a"
+            href='/#turnos'
             size="large" 
             startIcon={<CalendarMonthIcon />}
             sx={{ 
@@ -40,7 +42,8 @@ export default function Hero() {
               fontWeight: 'bold',
               textTransform: 'none',
               borderRadius: '12px',
-              '&:hover': { backgroundColor: '#111827', color: '#d4af37', borderWidth: '2px' }
+              '&:hover': { backgroundColor: '#111827', color: '#d4af37', borderWidth: '2px' },
+              transition: 'all 0.3s ease'
             }}
           >
             Agendar Consulta
