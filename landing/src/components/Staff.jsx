@@ -5,21 +5,21 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 export default function Staff() {
   const team = [
     {
-      name: 'Dr. Cristian Consalvo',
-      specialty: 'Especialista en Rehabilitación Oral y Estética',
-      bio: 'Líder del equipo CCD con más de 15 años de experiencia, enfocado en el criterio biomimético y la excelencia clínica.',
+      name: 'Dr. Cristian Consalvi',
+      specialty: 'Odontologia General',
+      bio: 'Lider de equipo CCD, especialista en odontologia general, implantologia, rehabilitación Biomimetica fija, diseño de sonrisa con resinas y porcelana.',
       image: 'Odontologos/CristianConsalvi.jpeg'
     },
     {
       name: 'Dra. Camila Santana',
-      specialty: 'Especialista en Odontopediatría y Ortopedia',
+      specialty: 'Odontologia General',
       bio: 'Dedicada al cuidado de la salud bucal de los más pequeños con un enfoque preventivo y cercano.',
       image: 'Odontologos/CamilaSantana.jpeg'
     },
     {
       name: 'Dra. Juliana Stempless',
-      specialty: 'Especialista en Endodoncia y Periodoncia',
-      bio: 'Experto en conservar la estructura dental natural mediante tratamientos de alta precisión y mínima invasión.',
+      specialty: 'Odontologia General',
+      bio: 'Dedicada al cuidado de la salud bucal con un enfoque en la prevención y el tratamiento integral.',
       image: 'Odontologos/JulianaStempless.jpeg'
     }
   ];

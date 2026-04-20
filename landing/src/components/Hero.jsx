@@ -3,7 +3,7 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 export default function Hero() {
   return (
-    <section className="relative flex flex-col items-left justify-center min-h-[80vh] px-4 py-20 text-left bg-[url('/banner4.jpeg')] bg-cover bg-center">
+    <section className="relative flex flex-col items-left justify-center min-h-[80vh] px-4 py-20 text-left bg-[url('/Banner2.jpg')] bg-cover bg-center">
       
       {/* NOTA: Para poner una imagen real de fondo luego, cambia el bg-gray-50 de arriba por:
         bg-[url('/foto-consultorio.jpg')] bg-cover bg-center
