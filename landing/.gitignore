@@ -1,4 +1,37 @@
-# Logs
+# ==========================================
+# DEPENDENCIAS (LA REGLA DE ORO)
+# ==========================================
+**/node_modules
+node_modules/
+
+# ==========================================
+# ARCHIVOS DE PRODUCCIÓN / COMPILACIÓN
+# ==========================================
+dist/
+dist-ssr/
+build/
+
+# ==========================================
+# VARIABLES DE ENTORNO (SEGURIDAD)
+# ==========================================
+.env
+.env.local
+.env.*.local
+*.local
+
+# ==========================================
+# BASURA DEL SISTEMA OPERATIVO
+# ==========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# ==========================================
+# LOGS Y DEBUGGING
+# ==========================================
 logs
 *.log
 npm-debug.log*
@@ -7,41 +40,14 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
+# ==========================================
+# CONFIGURACIONES DE EDITORES (VS Code, etc)
+# ==========================================
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-
-# Dependencias (LA REGLA DE ORO)
-**/node_modules
-node_modules/
-
-# Archivos de producción / compilación
-dist/
-dist-ssr/
-build/
-
-# Variables de entorno (Seguridad)
-.env
-.env.local
-.env.*.local
-
-# Archivos de Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Basura del sistema operativo (Mac y Windows)
-.DS_Store
-Thumbs.db
