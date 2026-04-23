@@ -11,6 +11,9 @@ export default function Services() {
   // 2. Memoria para guardar toda la información del tratamiento que el usuario clickeó
   const [selectedTreatment, setSelectedTreatment] = useState(null);
 
+  // Memoria para saber qué tarjeta se tocó en el celular
+  const [activeCard, setActiveCard] = useState(null);
+
   // Función que se ejecuta al tocar "Saber más"
   const handleOpen = (treatment) => {
     setSelectedTreatment(treatment); // Guardamos qué tratamiento es
@@ -137,17 +140,21 @@ export default function Services() {
           {treatments.map((item, index) => (
             <div 
               key={index} 
+              // Al tocar, si es la misma tarjeta la cierra (null), si es otra la abre (index)
+              onClick={() => setActiveCard(activeCard === index ? null : index)} 
+              // Si el usuario desliza el dedo afuera, se cierra
+              onMouseLeave={() => setActiveCard(null)} 
               className="relative group overflow-hidden rounded-2xl shadow-lg h-[350px] cursor-pointer"
             >
-              {/* Imagen de fondo (se agranda en hover) */}
+              {/* Imagen de fondo */}
               <img 
                 src={item.image} 
                 alt={item.title} 
                 className="absolute inset-0 object-cover w-full h-full transition-transform duration-700 ease-in-out group-hover:scale-110"
               />
               
-              {/* Capa oscura (se oscurece más en hover para poder leer el texto) */}
-              <div className="absolute inset-0 transition-opacity duration-500 bg-gradient-to-t from-black/90 via-black/40 to-transparent group-hover:from-black/95 group-hover:via-black/70"></div>
+              {/* Capa oscura (se activa con hover en PC, o al tocar en móvil) */}
+              <div className={`absolute inset-0 transition-opacity duration-500 bg-gradient-to-t from-black/90 via-black/40 to-transparent ${activeCard === index ? 'from-black/95 via-black/70' : 'group-hover:from-black/95 group-hover:via-black/70'}`}></div>
 
               {/* Contenedor del contenido */}
               <div className="absolute inset-0 flex flex-col justify-end p-6">
@@ -160,14 +167,17 @@ export default function Services() {
                   {item.subtitle}
                 </Typography>
 
-                {/* Textos y botón ocultos (se revelan en hover) */}
-                <div className="overflow-hidden transition-all duration-500 ease-in-out max-h-0 opacity-0 group-hover:max-h-48 group-hover:opacity-100 group-hover:mt-3">
+                {/* Textos y botón ocultos (AQUÍ ESTÁ LA MAGIA) */}
+                <div className={`overflow-hidden transition-all duration-500 ease-in-out ${activeCard === index ? 'max-h-48 opacity-100 mt-3' : 'max-h-0 opacity-0 group-hover:max-h-48 group-hover:opacity-100 group-hover:mt-3'}`}>
                   <Typography variant="body2" sx={{ color: '#e5e7eb', mb: 3, lineHeight: 1.5 }}>
                     {item.description}
                   </Typography>
 
                   <Button
-                    onClick={() => handleOpen(item)}
+                    onClick={(e) => {
+                      e.stopPropagation(); // Evita que se cierre la tarjeta al tocar el botón
+                      handleOpen(item);
+                    }}
                     variant="outlined" 
                     size="small"
                     endIcon={<ArrowForwardIcon />}
