@@ -8,26 +8,26 @@ export default function Staff() {
       name: 'Dr. Cristian Consalvi',
       specialty: 'DIRECTOR CLÍNICO Y LÍDER DE EQUIPO',
       bio: 'Fundador de CCD. Especialista en odontología general, implantología y rehabilitación biomimética fija. Experto en diseño de sonrisa con resinas y porcelana.',
-      image: 'Odontologos/CristianConsalvi.jpeg'
+      image: 'Odontologos/CristianConsalvi.webp'
     },
     {
       name: 'Dra. Camila Santana',
       specialty: 'ODONTOPEDIATRÍA Y ODONTOLOGÍA GENERAL',
       bio: 'Especializada en el diagnóstico biomimético integral y en el cuidado de la salud bucal infantil, acompañando el desarrollo con un enfoque preventivo y cercano.',
-      image: 'Odontologos/CamilaSantana.png',
+      image: 'Odontologos/CamilaSantana.webp',
       imagePosition: 'center 0%'
     },
     {
       name: 'Dra. Juliana Stempless',
       specialty: 'CIRUGÍA Y PRÓTESIS REMOVIBLE',
       bio: 'Enfocada en el análisis biomimético detallado, procedimientos quirúrgicos conservadores y soluciones protésicas para recuperar la estabilidad y confianza.',
-      image: 'Odontologos/JulianaStempless.jpeg'
+      image: 'Odontologos/JulianaStempless.webp'
     },
     {
       name: 'Dra. Ana Giunta',
       specialty: 'ENDODONCIA Y MICROENDODONCIA',
       bio: 'Especialista en salvar la estructura dental natural. Realiza tratamientos de conducto de alta precisión y mínima invasión para eliminar el dolor y preservar tu sonrisa.',
-      image: 'Odontologos/AnaGiunta.png',
+      image: 'Odontologos/AnaGiunta.webp',
       imagePosition: 'center',
       imageScale: '1.2'
     }
