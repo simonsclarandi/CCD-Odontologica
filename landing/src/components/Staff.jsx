@@ -6,21 +6,30 @@ export default function Staff() {
   const team = [
     {
       name: 'Dr. Cristian Consalvi',
-      specialty: 'Odontologia General',
-      bio: 'Lider de equipo CCD, especialista en odontologia general, implantologia, rehabilitación Biomimetica fija, diseño de sonrisa con resinas y porcelana.',
+      specialty: 'DIRECTOR CLÍNICO Y LÍDER DE EQUIPO',
+      bio: 'Fundador de CCD. Especialista en odontología general, implantología y rehabilitación biomimética fija. Experto en diseño de sonrisa con resinas y porcelana.',
       image: 'Odontologos/CristianConsalvi.jpeg'
     },
     {
       name: 'Dra. Camila Santana',
-      specialty: 'Odontologia General',
-      bio: 'Dedicada al cuidado de la salud bucal de los más pequeños con un enfoque preventivo y cercano.',
-      image: 'Odontologos/CamilaSantana.jpeg'
+      specialty: 'ODONTOPEDIATRÍA Y ODONTOLOGÍA GENERAL',
+      bio: 'Especializada en el diagnóstico biomimético integral y en el cuidado de la salud bucal infantil, acompañando el desarrollo con un enfoque preventivo y cercano.',
+      image: 'Odontologos/CamilaSantana.png',
+      imagePosition: 'center 0%'
     },
     {
       name: 'Dra. Juliana Stempless',
-      specialty: 'Odontologia General',
-      bio: 'Dedicada al cuidado de la salud bucal con un enfoque en la prevención y el tratamiento integral.',
+      specialty: 'CIRUGÍA Y PRÓTESIS REMOVIBLE',
+      bio: 'Enfocada en el análisis biomimético detallado, procedimientos quirúrgicos conservadores y soluciones protésicas para recuperar la estabilidad y confianza.',
       image: 'Odontologos/JulianaStempless.jpeg'
+    },
+    {
+      name: 'Dra. Ana Giunta',
+      specialty: 'ENDODONCIA Y MICROENDODONCIA',
+      bio: 'Especialista en salvar la estructura dental natural. Realiza tratamientos de conducto de alta precisión y mínima invasión para eliminar el dolor y preservar tu sonrisa.',
+      image: 'Odontologos/AnaGiunta.png',
+      imagePosition: 'center',
+      imageScale: '1.2'
     }
   ];
 
@@ -40,7 +49,7 @@ export default function Staff() {
         </div>
 
         {/* Grilla de Profesionales */}
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
           {team.map((member, index) => (
             <div key={index} className="flex flex-col items-center text-center group">
               
@@ -54,7 +63,10 @@ export default function Staff() {
                     width: 200, 
                     height: 200, 
                     border: '4px solid white',
-                    boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1)'
+                    boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1)', '& .MuiAvatar-img': {
+                      objectPosition: member.imagePosition || 'center',
+                      transform: `scale(${member.imageScale || '1'})`,
+                    }
                   }}
                 />
               </div>

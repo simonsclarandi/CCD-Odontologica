@@ -20,7 +20,7 @@ export default function ContactFooter() {
               CCD<span className="text-gold-500">Odontológica</span>
             </div>
             <p className="text-sm leading-relaxed text-gray-400">
-              Centro Dental Cristian Consalvo. <br/>
+              Centro Dental Cristian Consalvi. <br/>
               Odontología basada en criterio biomimético. Arte, ciencia y tecnología al servicio de tu salud bucal.
             </p>
             <div className="flex gap-2">
@@ -89,7 +89,7 @@ export default function ContactFooter() {
               </li>
               <li className="flex items-center gap-3">
                 <EmailIcon sx={{ color: '#d4af37', fontSize: 20 }} />
-                <span>info@centroconsalvo.com</span>
+                <span>odocon01@gmail.com</span>
               </li>
             </ul>
           </div>
