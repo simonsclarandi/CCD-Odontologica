@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section 
   className="relative flex flex-col items-start justify-center min-h-[80vh] px-4 py-20 text-left bg-cover bg-center"
-  style={{ backgroundImage: "url('/Hero-background2.webp')" }}
+  style={{ backgroundImage: "url('/Hero-background.webp')" }}
 >
       
       {/* NOTA: Para poner una imagen real de fondo luego, cambia el bg-gray-50 de arriba por:
