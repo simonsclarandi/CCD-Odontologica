@@ -1,7 +1,16 @@
-import { Typography } from '@mui/material';
+import { useState } from 'react'; // <-- Importamos useState
+import { Typography, Button, Dialog, DialogContent, IconButton } from '@mui/material'; // <-- Agregamos los componentes del modal
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
+import CloseIcon from '@mui/icons-material/Close'; // <-- Icono para cerrar
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward'; // <-- Icono para el botón
 
 export default function Philosophy() {
+  // Estado para controlar abrir y cerrar el modal
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <section id="filosofia" className="py-24 bg-white">
       <div className="px-6 mx-auto max-w-7xl">
@@ -31,6 +40,28 @@ export default function Philosophy() {
                 Creemos en tratamientos necesarios, explicados con claridad, y en construir confianza a través de decisiones bien tomadas. Porque cuando entendés tu tratamiento, elegís mejor.
               </p>
             </div>
+
+            {/* NUEVO: Botón para abrir el Modal */}
+            <div className="mt-8">
+              <Button 
+                onClick={handleOpen}
+                variant="outlined" 
+                size="large"
+                endIcon={<ArrowForwardIcon />}
+                sx={{ 
+                  color: '#111827', 
+                  borderColor: '#d4af37',
+                  borderWidth: '2px',
+                  textTransform: 'none',
+                  fontWeight: 'bold',
+                  borderRadius: '8px',
+                  padding: '10px 24px',
+                  '&:hover': { backgroundColor: '#d4af37', color: '#fff', borderColor: '#d4af37' }
+                }}
+              >
+                Saber más sobre Biomimética
+              </Button>
+            </div>
           </div>
 
           {/* Columna Derecha: Tarjeta destacada con la frase fuerte */}
@@ -51,6 +82,74 @@ export default function Philosophy() {
         </div>
 
       </div>
+
+      {/* --- INICIO DEL MODAL (Explicación Biomimética) --- */}
+      <Dialog 
+        open={open} 
+        onClose={handleClose} 
+        maxWidth="md" 
+        fullWidth 
+        PaperProps={{ sx: { borderRadius: '24px', overflow: 'hidden' } }}
+      >
+        <div className="relative bg-white">
+          
+          {/* Botón X para cerrar */}
+          <IconButton 
+            onClick={handleClose} 
+            sx={{ position: 'absolute', right: 8, top: 8, color: '#9ca3af', zIndex: 10, '&:hover': { color: '#111827' }, backgroundColor: 'rgba(255, 255, 255, 0.8)' }}
+          >
+            <CloseIcon />
+          </IconButton>
+
+          <DialogContent sx={{ p: 0 }}>
+            <div className="flex flex-col md:flex-row">
+              
+              {/* Columna Izquierda: Texto Explicativo */}
+              <div className="flex flex-col justify-center p-8 md:w-1/2">
+                <Typography variant="overline" sx={{ color: '#d4af37', fontWeight: 'bold', letterSpacing: 1.5 }}>
+                  Profundizando en nuestro enfoque
+                </Typography>
+                <Typography variant="h4" sx={{ fontWeight: 'extrabold', color: '#111827', mt: 1, mb: 2, lineHeight: 1.1 }}>
+                  ¿Qué es la Odontología Biomimética?
+                </Typography>
+                <Typography variant="body1" sx={{ color: '#4b5563', mb: 3, lineHeight: 1.7, whiteSpace: 'pre-line' }}>
+                  {`La biomimética es la ciencia y el arte de restaurar los dientes imitando a la naturaleza.
+
+                  En lugar de usar las técnicas tradicionales que muchas veces requieren desgastar gran parte del diente sano para colocar fundas o pernos invasivos, la biomimética utiliza tecnología de adhesión avanzada.
+                  
+                  Nos permite tratar caries y fracturas reforzando el diente con materiales que se comportan física y mecánicamente como el tejido natural.
+                  
+                  El resultado: conservamos tu diente original, evitamos tratamientos de conducto innecesarios y logramos sonrisas mucho más fuertes y duraderas.`}
+                </Typography>
+
+                <Button 
+                  variant="contained" 
+                  href="#turnos" 
+                  onClick={handleClose}
+                  sx={{ backgroundColor: '#111827', color: 'white', width: 'fit-content', textTransform: 'none', fontWeight: 'bold', borderRadius: '8px', '&:hover': { backgroundColor: '#d4af37', color: '#111827' } }}
+                >
+                  Agendar una evaluación
+                </Button>
+              </div>
+
+              {/* Columna Derecha: Video de Instagram */}
+              <div className="flex items-center justify-center p-4 bg-gray-100 min-h-[400px] md:w-1/2">
+                <iframe
+                  src="https://www.instagram.com/reel/DQXi-i-EZQM/embed" // <-- Reemplaza con tu enlace /embed
+                  className="w-full h-[500px] md:h-[600px] rounded-xl border border-gray-200 shadow-sm"
+                  frameBorder="0"
+                  scrolling="no"
+                  allowTransparency="true"
+                  allow="encrypted-media"
+                  title="¿Qué es la Odontología Biomimética?"
+                ></iframe>
+              </div>
+
+            </div>
+          </DialogContent>
+        </div>
+      </Dialog>
+      {/* --- FIN DEL MODAL --- */}
     </section>
   );
 }

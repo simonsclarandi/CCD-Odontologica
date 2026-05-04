@@ -35,7 +35,7 @@ export default function Services() {
       image: '/Cards/Cirugia.jpeg',
       // Datos modal
       extraInfo: 'Intervenir solo cuando sea realmente necesario. \n\n La cirugía debe ser una indicación precisa, no una costumbre. En CCD valoramos cada caso con criterio biológico, priorizando siempre las alternativas conservadoras cuando son viables.\n\n Cuando el tratamiento quirúrgico es necesario, lo planificamos con exactitud para reducir trauma, mejorar la recuperación y favorecer un resultado funcional y biológicamente estable.\n\nObjetivo: resolver lo necesario con la menor agresión posible.',
-      igEmbed: 'https://www.instagram.com/p/ejemplo_del_video/embed'
+      //igEmbed: 'https://www.instagram.com/p/ejemplo_del_video/embed'
     },
     {
       title: 'Odontopediatría',
@@ -44,7 +44,7 @@ export default function Services() {
       image: '/Cards/Odontopediatria.jpeg',
       // Datos modal
       extraInfo: 'Cuidar desde el inicio es prevenir el futuro. \n\nLa odontología infantil no consiste solo en tratar caries: consiste en acompañar el crecimiento, educar hábitos y proteger el desarrollo bucal desde edades tempranas.\n\nNuestra mirada biomimética en niños prioriza prevención, mínima invasión y tratamientos respetuosos con la biología y la experiencia emocional del paciente.\n\nObjetivo: construir salud bucal desde el comienzo, con cuidado y confianza.',
-      igEmbed: 'https://www.instagram.com/p/ejemplo_del_video/embed'
+      //igEmbed: 'https://www.instagram.com/p/ejemplo_del_video/embed'
     },
     {
       title: 'Ortopedia',
@@ -53,7 +53,7 @@ export default function Services() {
       image: '/Cards/Ortopedia.jpeg',
       // Datos modal
       extraInfo: 'Guiar el crecimiento, no forzarlo.\n\nLa ortopedia funcional busca acompañar y orientar el desarrollo, aprovechando el potencial biológico del paciente en crecimiento.\n\nDesde una mirada respetuosa de la biología, priorizamos diagnósticos tempranos e intervenciones que favorezcan función, respiración, desarrollo y armonía facial, evitando tratamientos innecesariamente agresivos.\n\nObjetivo: intervenir a tiempo para guiar mejor el crecimiento.',
-      igEmbed: 'https://www.instagram.com/p/ejemplo_del_video/embed'
+      //igEmbed: 'https://www.instagram.com/p/ejemplo_del_video/embed'
     },
     {
       title: 'Restauraciones',
@@ -62,7 +62,7 @@ export default function Services() {
       image: '/Cards/Restauraciones.jpeg',
       // Datos modal
       extraInfo: 'Conservar estructura es preservar el futuro\n\nLa odontología biomimética parte de una idea central: cuanto más tejido sano se conserva, mejor pronóstico tiene el diente.\n\nPor eso nuestras restauraciones buscan imitar el comportamiento natural del diente, reforzar lo debilitado y evitar preparaciones invasivas innecesarias. No solo restauramos una cavidad: devolvemos biomecánica, sellado y función.\n\nObjetivo: restaurar respetando la biología y la estructura remanente.',
-      igEmbed: 'https://www.instagram.com/p/ejemplo_del_video/embed'
+      //igEmbed: 'https://www.instagram.com/p/ejemplo_del_video/embed'
     },
     {
       title: 'Estética dental',
@@ -71,7 +71,7 @@ export default function Services() {
       image: '/Cards/Estetica.jpeg',
       // Datos modal
       extraInfo: 'Resultados naturales, no artificiales.\n\nLa verdadera estética no consiste en que todos los dientes se vean iguales, sino en respetar proporciones, textura, luz, función y armonía facial.\n\nNuestra odontología estética se basa en principios biomiméticos: restaurar imitando la naturaleza, conservando tejido sano y evitando sobretratamientos que sacrifiquen estructura por una estética forzada.\n\nObjetivo: una sonrisa armónica, saludable y creíble.',
-      igEmbed: 'https://www.instagram.com/p/ejemplo_del_video/embed'
+      //igEmbed: 'https://www.instagram.com/p/ejemplo_del_video/embed'
     },
     {
       title: 'Rehabilitación',
@@ -80,7 +80,7 @@ export default function Services() {
       image: '/Cards/Rehabilitacion.jpeg',
       // Datos modal
       extraInfo: 'Recuperar función con criterio.\n\nRehabilitar no es solo “arreglar dientes”, sino devolver equilibrio al sistema oral. En CCD estudiamos la causa del desgaste, la pérdida de estructura o la alteración funcional antes de indicar cualquier tratamiento.\n\nLa visión biomimética nos permite planificar restauraciones que respeten la biomecánica del diente, preserven remanente sano y distribuyan mejor las cargas.\n\nObjetivo: reconstruir función, estética y estabilidad a largo plazo.',
-      igEmbed: 'https://www.instagram.com/p/ejemplo_del_video/embed'
+      //igEmbed: 'https://www.instagram.com/p/ejemplo_del_video/embed'
     },
     {
       title: 'Implantes',
@@ -89,7 +89,7 @@ export default function Services() {
       image: '/Cards/Implante.jpeg',
       // Datos modal
       extraInfo: 'Reemplazar solo cuando realmente es necesario.\n\nUn implante no debe ser la primera respuesta automática. En CCD priorizamos conservar dientes siempre que exista una posibilidad real, predecible y biológicamente favorable.\n\nCuando la pieza no puede mantenerse, indicamos implantes con diagnóstico preciso y planificación cuidadosa, buscando restituir función y estética de manera armónica con el resto del sistema oral.\n\nObjetivo: reemplazar con criterio, no extraer por rutina.',
-      igEmbed: 'https://www.instagram.com/p/ejemplo_del_video/embed'
+      //igEmbed: 'https://www.instagram.com/p/ejemplo_del_video/embed'
     },
     {
       title: 'Endodoncia',
@@ -98,7 +98,7 @@ export default function Services() {
       image: '/Cards/Endoncia.jpeg',
       // Datos modal
       extraInfo: 'Eliminar dolor y conservar posibilidades.\n\nLa endodoncia es una herramienta valiosa cuando el diente la necesita, pero nunca debe indicarse por inercia. Desde una mirada biomimética, evaluamos cada caso con el objetivo de preservar la mayor cantidad posible de estructura sana.\n\nCuando el tratamiento de conducto es necesario, buscamos que el diente mantenga su integridad biomecánica y pueda ser restaurado de forma funcional y durable.\n\nObjetivo: resolver la patología preservando el futuro restaurador del diente.',
-      igEmbed: 'https://www.instagram.com/p/ejemplo_del_video/embed'
+      //igEmbed: 'https://www.instagram.com/p/ejemplo_del_video/embed'
     },
     {
       title: 'Blanqueamiento',
@@ -107,7 +107,7 @@ export default function Services() {
       image: '/Cards/Blanqueo.jpeg',
       // Datos modal
       extraInfo: 'Una estética que respeta el diente.\n\nEn CCD entendemos el blanqueamiento como un tratamiento estético que debe realizarse con criterio, diagnóstico y control profesional. No se trata solo de “blanquear”, sino de mejorar el color dental preservando la estructura y cuidando la sensibilidad.\n\nNuestra visión biomimética prioriza resultados armónicos, naturales y seguros, evitando excesos que comprometan la salud del esmalte o generen una apariencia artificial.\n\nObjetivo: mejorar la sonrisa sin perder naturalidad ni salud.',
-      igEmbed: 'https://www.instagram.com/p/ejemplo_del_video/embed'
+      //igEmbed: 'https://www.instagram.com/p/ejemplo_del_video/embed'
     },
     {
       title: 'Periodoncia',
@@ -116,7 +116,7 @@ export default function Services() {
       image: '/Cards/Peridoncia.jpeg',
       // Datos modal
       extraInfo: 'La salud de las encías es la base de todo\n\nNo existe odontología de calidad sin salud periodontal. Las encías y los tejidos de soporte son el fundamento sobre el que se sostienen la estética, la función y la estabilidad de cualquier tratamiento.\n\nDesde una visión biomimética, no tratamos solo dientes: tratamos el sistema completo. Por eso evaluamos inflamación, sangrado, soporte óseo y hábitos que puedan afectar el equilibrio del medio bucal.\n\nObjetivo: recuperar salud, estabilidad y un entorno biológico sano para cualquier rehabilitación.',
-      igEmbed: 'https://www.instagram.com/p/ejemplo_del_video/embed'
+      //igEmbed: 'https://www.instagram.com/p/ejemplo_del_video/embed'
     }
   ];
 
@@ -247,6 +247,17 @@ export default function Services() {
 
                 {/* Columna Derecha: Video de Instagram */}
                 <div className="flex items-center justify-center p-4 bg-gray-100 min-h-[400px] md:w-1/2">
+                  {/* --- VERSIÓN ACTUAL: Muestra la imagen de la tarjeta --- */}
+                  <img 
+                    src={selectedTreatment.image} 
+                    alt={`Imagen representativa de ${selectedTreatment.title}`} 
+                    className="object-cover w-full h-[400px] md:h-[100%]"
+                  />
+
+                  {/* --- VERSIÓN FUTURA: Videos de Instagram --- */}
+                  {/* Cuando tengas los videos, borra la etiqueta <img> de arriba, 
+                      descomenta este bloque y asegúrate de agregar los links en el array treatments.
+
                   {selectedTreatment.igEmbed ? (
                     <iframe
                       src={selectedTreatment.igEmbed}
@@ -258,10 +269,11 @@ export default function Services() {
                       title={`Video de ${selectedTreatment.title}`}
                     ></iframe>
                   ) : (
-                    <div className="text-center text-gray-400">
+                    <div className="text-center text-gray-400 p-4">
                       <p>Video demostrativo no disponible aún.</p>
                     </div>
                   )}
+                  */}
                 </div>
 
               </div>
