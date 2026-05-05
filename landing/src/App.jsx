@@ -7,6 +7,7 @@ import ContactFooter from './components/ContactFooter.jsx'
 import FloatingWhatsApp from './components/FloatingWhatsApp.jsx'
 import Staff from './components/Staff.jsx'
 import Appointment from './components/Appointment.jsx'
+import ProblemSection from './components/ProblemSection.jsx'
 import './App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <main className="w-full min-h-screen font-sans bg-gray-50">
         <Navbar />
         <Hero />
+        <ProblemSection />
         <Philosophy />
         <WhyChooseUs />
         <Staff />

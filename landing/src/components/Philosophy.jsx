@@ -75,7 +75,7 @@ export default function Philosophy() {
             
             <Typography variant="h5" component="blockquote" sx={{ fontWeight: 'bold', fontStyle: 'italic', color: '#111827', lineHeight: 1.5 }}>
               "La verdadera odontología no consiste en desgastar y reemplazar sin pensar, sino en diagnosticar con precisión, intervenir con criterio y reconstruir imitando lo que la naturaleza ya resolvió de la mejor manera. <br/><br/>
-              <span style={{ color: '#d4af37' }}>Conserva con inteligencia.</span>"
+              <span style={{ color: '#d4af37' }}>Conservar con inteligencia.</span>"
             </Typography>
           </div>
 

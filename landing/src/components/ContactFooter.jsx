@@ -20,7 +20,7 @@ export default function ContactFooter() {
               CCD<span className="text-gold-500">Odontológica</span>
             </div>
             <p className="text-sm leading-relaxed text-gray-400">
-              Centro Dental Cristian Consalvi. <br/>
+              Consalvi Centro Dental <br/>
               Odontología basada en criterio biomimético. Arte, ciencia y tecnología al servicio de tu salud bucal.
             </p>
             <div className="flex gap-2">
