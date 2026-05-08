@@ -13,16 +13,24 @@ export default function Hero() {
       <div className="relative z-10 w-full max-w-7xl lg:mx-auto">
         
         {/* Título: Aplicamos lg:text-center SOLO aquí */}
-        <h1 className="mb-6 text-5xl font-extrabold tracking-tight text-gray-900 md:text-7xl lg:text-center">
-          No todos los tratamientos <br className="hidden md:block" />
-          <span className="text-gold-500">son iguales.</span>
+        <h1 className="mb-6 text-5xl font-extrabold tracking-tight text-gold-500 md:text-8xl lg:text-center" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+          BASTA DE PERNOS Y CORONAS <br className="hidden md:block" />
+          {/*<span className="text-gold-500">son iguales.</span>*/}
         </h1>
+
+        {/* SubTítulo: Aplicamos lg:text-center SOLO aquí */}
+        <h3 className="mb-6 text-5xl font-extrabold tracking-tight text-gray-700 md:text-4xl lg:text-center">
+           La odontología evolucionó<br className="hidden md:block" />
+          {/*<span className="text-gold-500">son iguales.</span>*/}
+        </h3>
         
         {/* Párrafo: lg:mx-auto centra la caja del párrafo, lg:text-center centra el texto interior */}
         <p className="max-w-2xl mb-10 text-lg leading-relaxed text-gray-800 md:text-xl lg:mx-auto lg:text-center">
-          En Consalvi Centro Dental evitamos pernos y coronas innecesarias mediante odontología biomimética.
+          En CCD trabajamos para conservar, proteger y restaurar dientes mediante biomimética y adhesión moderna.
           <br className="mb-2" />
-          <span className="block font-bold">Conservamos tu diente, no lo destruimos.</span>
+          <span className="block font-bold">No somos un consultorio más.</span>
+          <br className="mb-2" />
+          Conservar siempre será prioridad bajo nuestra guardia.
         </p>
 
         {/* --- DESDE AQUÍ TODO VUELVE A LA IZQUIERDA NATURALMENTE --- */}

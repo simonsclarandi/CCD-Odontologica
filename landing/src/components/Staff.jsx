@@ -57,13 +57,21 @@ export default function Staff() {
         </div>
 
         {/* Grilla de Profesionales */}
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+        {/* Grilla de Profesionales */}
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-6">
           {team.map((member, index) => (
-            <div key={index} className="flex flex-col items-center text-center group">
+            <div 
+              key={index} 
+              // 1. Agregamos 'group' para las animaciones y 'items-center text-center' para que todo quede en el medio de la columna
+              className={`group relative flex flex-col items-center text-center md:col-span-1 ${index < 2 ? 'lg:col-span-3' : 'lg:col-span-2'} `}
+            >
               
-              {/* Contenedor de la Foto con efecto hover */}
-              <div className="relative mb-6">
+              {/* Contenedor de la Foto (2. Le damos un tamaño fijo estricto de w-[200px] y h-[200px]) */}
+              <div className="relative w-[200px] h-[200px] mb-6">
+                
+                {/* Ahora el 'inset-0' se limita a los 200x200 del padre, manteniendo el círculo perfecto */}
                 <div className="absolute inset-0 transition-transform duration-300 border-2 rounded-full border-gold-500 scale-105 group-hover:scale-110"></div>
+                
                 <Avatar 
                   src={member.image} 
                   alt={member.name}
@@ -71,7 +79,8 @@ export default function Staff() {
                     width: 200, 
                     height: 200, 
                     border: '4px solid white',
-                    boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1)', '& .MuiAvatar-img': {
+                    boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1)', 
+                    '& .MuiAvatar-img': {
                       objectPosition: member.imagePosition || 'center',
                       transform: `scale(${member.imageScale || '1'})`,
                     }
@@ -91,11 +100,12 @@ export default function Staff() {
                 {member.bio}
               </p>
 
-              {/* Redes del profesional (Opcional) */}
-              <div className="flex gap-2 mt-4 opacity-0 transition-opacity group-hover:opacity-100">
+              {/* Redes del profesional 
+              <div className="flex gap-2 mt-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                 <IconButton size="small" sx={{ color: '#111827' }}><LinkedInIcon fontSize="small" /></IconButton>
                 <IconButton size="small" sx={{ color: '#d4af37' }}><InstagramIcon fontSize="small" /></IconButton>
               </div>
+              */}
             </div>
           ))}
         </div>
