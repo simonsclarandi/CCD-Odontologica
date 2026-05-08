@@ -5,28 +5,36 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 export default function Staff() {
   const team = [
     {
-      name: 'Dr. Cristian Consalvi',
-      specialty: 'DIRECTOR CLÍNICO Y LÍDER DE EQUIPO',
-      bio: 'Fundador de CCD. Especialista en odontología general, implantología y rehabilitación biomimética fija. Experto en diseño de sonrisa con resinas y porcelana.',
+      name: 'Cristian Consalvi',
+      //specialty: 'DIRECTOR CLÍNICO Y LÍDER DE EQUIPO',
+      bio: '“Si se puede conservar, ¿por qué destruir? No bajo mi guardia.”',
       image: 'Odontologos/CristianConsalvi.webp'
     },
     {
-      name: 'Dra. Camila Santana',
-      specialty: 'ODONTOPEDIATRÍA Y ODONTOLOGÍA GENERAL',
-      bio: 'Especializada en el diagnóstico biomimético integral y en el cuidado de la salud bucal infantil, acompañando el desarrollo con un enfoque preventivo y cercano.',
+      name: 'Micaela Clua',
+      //specialty: 'ENDODONCIA Y MICROENDODONCIA',
+      bio: '“La experiencia del paciente empieza mucho antes del tratamiento.”',
+      image: 'Odontologos/MicaelaClua.webp',
+      imagePosition: 'center 25%',
+      imageScale: '1'
+    },
+    {
+      name: 'Camila Santana',
+      //specialty: 'ODONTOPEDIATRÍA Y ODONTOLOGÍA GENERAL',
+      bio: '“La prevención también puede transformar una sonrisa.”',
       image: 'Odontologos/CamilaSantana.webp',
       imagePosition: 'center 0%'
     },
     {
-      name: 'Dra. Juliana Stempless',
-      specialty: 'CIRUGÍA Y PRÓTESIS REMOVIBLE',
-      bio: 'Enfocada en el análisis biomimético detallado, procedimientos quirúrgicos conservadores y soluciones protésicas para recuperar la estabilidad y confianza.',
+      name: 'Juliana Stempless',
+      //specialty: 'CIRUGÍA Y PRÓTESIS REMOVIBLE',
+      bio: '“Recuperar función y confianza desde un enfoque conservador.”',
       image: 'Odontologos/JulianaStempless.webp'
     },
     {
-      name: 'Dra. Ana Giunta',
-      specialty: 'ENDODONCIA Y MICROENDODONCIA',
-      bio: 'Especialista en salvar la estructura dental natural. Realiza tratamientos de conducto de alta precisión y mínima invasión para eliminar el dolor y preservar tu sonrisa.',
+      name: 'Ana Giunta',
+      //specialty: 'ENDODONCIA Y MICROENDODONCIA',
+      bio: '“Salvar estructura natural siempre será prioridad.”',
       image: 'Odontologos/AnaGiunta.webp',
       imagePosition: 'center',
       imageScale: '1.2'
