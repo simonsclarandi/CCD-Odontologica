@@ -26,10 +26,10 @@ export default function Staff() {
       imagePosition: 'center 0%'
     },
     {
-      name: 'Juliana Stempless',
+      name: 'Juliana Stempels',
       //specialty: 'CIRUGÍA Y PRÓTESIS REMOVIBLE',
       bio: '“Recuperar función y confianza desde un enfoque conservador.”',
-      image: 'Odontologos/JulianaStempless.webp'
+      image: 'Odontologos/JulianaStempels.webp'
     },
     {
       name: 'Ana Giunta',
