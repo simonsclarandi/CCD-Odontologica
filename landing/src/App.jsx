@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
 import Philosophy from './components/Philosophy.jsx'
@@ -25,6 +26,7 @@ function App() {
         <ContactFooter />
       </main>
       <FloatingWhatsApp />
+      <Analytics />
     </>
   )
 }
